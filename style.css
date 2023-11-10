@@ -1,0 +1,127 @@
+/* For Light Mode */
+:root {
+  --bg-color:rgb(193, 237, 255);
+  --bg-color_panel:#fff;
+  --bg-color_ptop:rgb(110, 203, 240);
+  --bg-color_bbl:rgb(90, 197, 240);
+  --bg-color_bbl_hover:rgb(21, 173, 233);
+  --text-color_bbl: #fff;
+  
+  
+}
+
+/*For Dark Mode */
+.dark-mode {
+  --bg-color: #000;
+  --bg-color_panel:#3f3e3e;
+  --bg-color_ptop:#2c2c2c;
+  --bg-color_bbl:rgb(177, 174, 174);
+  --bg-color_bbl_hover:white;
+  --text-color_bbl: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body,
+.main,
+html {
+  width: 100%;
+  height: 100%;
+  background-color:var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.panel {
+  width: 80%;
+  height: 80%;
+  background-color: var(--bg-color_panel);
+  border-radius:0.3rem;
+  overflow: hidden;
+}
+.ptop {
+  width: 100%;
+  height: 3.2rem;
+  background-color: var(--bg-color_ptop);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elem {
+  display: flex;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.heading {
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.6rem;
+  border-radius: 0.2rem;
+  color: black;
+  font-weight: 600;
+}
+.pbtm {
+  width: 100%;
+  color: red;
+  height: calc(100% - 3.2rem);
+  padding-top: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+/* here html present in js */
+.bubble {
+  background-color:var(--bg-color_bbl) ;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  color:var(--text-color_bbl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bubble:hover {
+  background-color:var(--bg-color_bbl_hover);
+  cursor: pointer;
+}
+.btn {
+  background-color: var(--bg-color_bbl);
+  cursor: pointer;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color:var(--text-color_bbl);
+  display: block;
+}
+.btn:hover {
+  background-color: var(--bg-color_bbl_hover);
+  color: var(--text-color_bbl);
+}
+.btn2{
+  background-color: #fff;
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  border: none;
+  color:black;
+}
+
+
