@@ -63,17 +63,18 @@ function runtime() {
 }
 
 // to add pause button
-var timeint;
+var timeint = null;
 function pause(){
   // console.log("paused");
   clearInterval(timeint)
+  timeint = null
 }
 function resume(){
   runtime();
   
 }
 document.getElementById('pause_btn').addEventListener('click',function(){
-  if(timeint){
+  if(timeint !== null){
     pause();
     document.getElementById('pause_btn').textContent=  'Resume';
   }else{
